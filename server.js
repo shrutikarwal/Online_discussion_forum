@@ -14,6 +14,7 @@ app.use(express.json());
 
 app.use('/api/threads', require('./routes/threadRoutes'));
 app.use('/api/comment', require('./routes/commentRoutes'));
+app.use('/api/replies', require('./routes/replyRoutes'));
 app.get('/', (req, res) => {
   res.send('API is running...');
 });
